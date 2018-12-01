@@ -29,7 +29,7 @@ public class HelloServlet extends HttpServlet {
         value=(String)hs.getAttribute("uname");
 
         if(value == null){
-            value = request.getParameter("username");
+            value = (String)request.getAttribute("filter");
             hs.setAttribute("uname", value);
             hs.setMaxInactiveInterval(100);
         }

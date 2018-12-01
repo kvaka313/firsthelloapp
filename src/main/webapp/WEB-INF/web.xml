@@ -20,5 +20,23 @@
         <servlet-name>OutputServlet</servlet-name>
         <url-pattern>/output</url-pattern>
     </servlet-mapping>
+    <filter>
+        <filter-name>FirstFilter</filter-name>
+        <filter-class>com.infopulse.filter.RequestFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FirstFilter</filter-name>
+        <!--<servlet-name>Myservlet</servlet-name>-->
+        <url-pattern>/hello</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>SecondFilter</filter-name>
+        <filter-class>com.infopulse.filter.OtherRequestFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SecondFilter</filter-name>
+        <url-pattern>/hello</url-pattern>
+    </filter-mapping>
+
 
 </web-app>
