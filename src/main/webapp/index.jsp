@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*"%>
 <%@ taglib prefix="mytag" uri="/WEB-INF/taglib/mytaglib.tld"%>
 <html>
 <head>
@@ -10,7 +10,10 @@
         <br>
         <input type="submit" name="ok" value="send"/>
     </form>
-   <mytag:welcome/>
+    <mytag:welcome name="Vasa">
+  hfduuduewyuewyueiwyeuwyeuwyeweiuyewuiyewu
+
+    </mytag:welcome>
 
 </body>
 </html>
