@@ -15,7 +15,8 @@
     <mytag:welcome name="Vasa">
         hfduuduewyuewyueiwyeuwyeuwyeweiuyewuiyewuffffhhhh
     </mytag:welcome>
-    <c:out value="ddddddddddddddd"/>
+    <c:set var="kkk" value="llllllllllllllll"/>
+    <c:out value="${kkk}"/>
 
 </body>
 </html>
