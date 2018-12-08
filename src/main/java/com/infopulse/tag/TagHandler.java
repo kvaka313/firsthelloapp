@@ -25,6 +25,8 @@ public class TagHandler extends BodyTagSupport {
     public int doAfterBody(){
         BodyContent bodyContent =getBodyContent();
         text = bodyContent.getString();
+
+
         return SKIP_BODY;
     }
 
@@ -33,20 +35,17 @@ public class TagHandler extends BodyTagSupport {
     }
 
     @Override
-    public int doEndTag(){
+    public int doEndTag() {
         JspWriter jspWriter = pageContext.getOut();
         try {
             jspWriter.println(text);
+            return BodyTagSupport.EVAL_PAGE;
         } catch (IOException e) {
             e.printStackTrace();
-        }finally{
-            try {
-                jspWriter.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        } finally {
+            return BodyTagSupport.EVAL_PAGE;
         }
 
-        return EVAL_PAGE;
     }
 }
+

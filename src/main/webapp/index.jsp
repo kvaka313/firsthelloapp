@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*"%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="mytag" uri="/WEB-INF/taglib/mytaglib.tld"%>
 <html>
 <head>
@@ -10,10 +11,11 @@
         <br>
         <input type="submit" name="ok" value="send"/>
     </form>
-    <mytag:welcome name="Vasa">
-  hfduuduewyuewyueiwyeuwyeuwyeweiuyewuiyewu
 
+    <mytag:welcome name="Vasa">
+        hfduuduewyuewyueiwyeuwyeuwyeweiuyewuiyewuffffhhhh
     </mytag:welcome>
+    <c:out value="ddddddddddddddd"/>
 
 </body>
 </html>
